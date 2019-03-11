@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>angular</title>
+    <script src="plugins/angularjs/angular.min.js"></script>
+    <script>
+        // var app = angular.module("myapp",[]);
+        // app.controller("myController",function($scope){
+        //     $scope.add=function () {
+        //         $scope.z =  parseInt($scope.x)+ parseInt($scope.y);
+        //     }
+        // });
+/*        var app = angular.module("myapp",[]);
+        app.controller("myController",function($scope){
+          $scope.list=[1213,221,323,421,553,632,713,8516,9643];
+        }); */
+
+/*        var app = angular.module("myapp",[]);
+        app.controller("myController",function($scope){
+          $scope.list=[{name:'zhngsan',grades:100},
+              {name:'xiaosan',grades:100},
+              {name:'zhngwu',grades:100},];
+        });*/
+        var app = angular.module("myapp",[]);
+        app.controller("myController",function ($scope) {
+            $scope.add=function () {
+                alert("last time");
+            }
+        });
+    </script>
+</head>
+<body ng-app="myapp" ng-controller="myController">
+<!--<body ng-app="myapp" ng-init="myname='java'">--><!--核心控制命令 ng-app -->
+<!--<input ng-model="name">&lt;!&ndash;雙向綁定 ng-model綁定變量名&ndash;&gt;{{name}}<br>
+<h1>{{100+100}}</h1>&lt;!&ndash;雙大括號，命令運行計算&ndash;&gt;<br>
+{{myname}}&lt;!&ndash;初始化綁定變量 ng-init&ndash;&gt;-->
+<!--
+<input ng-model="x">
+<input ng-model="y">
+<button ng-click="add()">運算</button>{{z}}-->
+
+<!--<table>
+    <tr ng-repeat="x in list">
+        <td>{{x}}</td>
+    </tr>
+</table>-->
+<!--<table>
+    <tr>
+        <td>姓名</td>
+        <td>成績</td>
+    </tr>
+    <tr ng-repeat="entity in list">
+        <td>{{entity.name}}</td>
+        <td>{{entity.grades}}</td>
+    </tr>
+</table>-->
+<button ng-click="add()">點我</button>
+</body>
+</html>
